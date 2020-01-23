@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;eagroProject.TestCaseButton.java&apos; to &apos;TestCaseAddNewUser.java&apos;&#x0D;&#x0A;- Original project: &apos;eagroProject&apos;&#x0D;&#x0A;- Original element: &apos;eagroProject.TestCaseButton.java&apos;&#x0D;&#x0A;- Renamed element: &apos;eagroProject.TestCaseAddNewUser.java&apos;" description="Rename compilation unit &apos;TestCaseButton.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/test\/java&lt;eagroProject{TestCaseButton.java" name="TestCaseAddNewUser.java" references="false" stamp="1575986276819" version="1.0"/>
+</session>

@@ -1,0 +1,8 @@
+
+<suite Thread-count="1" verbose="1" name="Gmail Suite" annotations="JDK" paraller="tests"></suite>
+<test name="efg">
+<classes>
+ <class name="testing.TCAddNewCustomer2"/>
+ <class name="testing.Ya"
+ 
+ </classes></test>

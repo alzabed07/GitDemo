@@ -1,0 +1,37 @@
+package eagroProject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class TestLogin {
+	@Test
+	public void homepage(){
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://agroportal.grameen-intel.com/unifiedeagro/auth/login/");
+		String title= driver.getTitle();
+		System.out.println("title is=+title");
+		driver.findElement(By.id("userName")).sendKeys("gisb_sqa@grameen-intel.com");
+		driver.findElement(By.name("password")).sendKeys("Yatomi04");
+		driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/div/form/div/div[4]/button")).click();
+
+		//		start Login verify 
+		
+		String actualTitle = "Admin Dashhhboard";
+		String foundTitle = driver.getTitle();
+		System.out.println(foundTitle + "title found");	
+		Assert.assertEquals(actualTitle, foundTitle,"failednot");
+		
+		String receivedProfile=driver.findElement(By.className("profilelink")).getText();
+		Assert.assertEquals(receivedProfile, "gisb sqa");
+	
+//		Enter Profile page
+		String title2 = driver.getTitle();
+		Assert.assertEquals(title2,"Profile of gisb");
+		System.out.println(title2);
+		
+	}
+}
+
